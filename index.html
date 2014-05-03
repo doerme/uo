@@ -1,10 +1,317 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en-US">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<meta charset="UTF-8">
+<title>游澳</title>
+<meta name="keywords" content="游澳">
+<meta name="description" content="游澳">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/dateRange.css" charset="utf-8">
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/dateRange.js"></script>
 </head>
 
 <body>
+<!-- 通用头部 -->
+<div class="common_head_wrap">
+  <div class="common_head">
+    <div class="ch_logo dib fl"> <img src="img/web_logo.jpg" /> </div>
+    <div class="ch_ctrl dib fr">
+      <div class="chc_top fr">
+        <ul>
+          <li><a href="javascript:;">切換為中文(繁體)</a></li>
+          <li><a href="javascript:;">登录</a>|<a href="javascript:;">注册</a></li>
+          <li><a href="javascript:;">我的订单</a></li>
+          <li><img src="img/weixin_jia.jpg" /></li>
+          <li>
+            <dl>
+              <dt>服务热线：09:00-21:00</dt>
+              <dd>020-88888888</dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+      <div class="chc_bottom fl">
+        <ul>
+          <li class="current"><a>首页</a></li>
+          <li>|</li>
+          <li><a>澳门自由行</a></li>
+          <li>|</li>
+          <li><a>香港自由行</a></li>
+          <li>|</li>
+          <li><a>出境旅游</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 通用头部end --> 
+<!-- 首页搜索导航 -->
+<div class="index_search">
+  <div class="is_main">
+    <div class="is_bg"> 
+      <!-- 背景 两个标签之间不允许回车换行 -->
+      <div class="bg_left dib"></div><div class="bg_right dib"></div>
+      <!-- 背景 end --> 
+    </div>
+    <ul class="ism_nav">
+      <li><a class="current"><span class="n1 bgsp"></span><span>酒店</span><span class="s bgsp"></span></a></li>
+      <li><a class=""><span class="n2 bgsp"></span><span>门票</span><span class="s bgsp"></span></a></li>
+      <li><a class=""><span class="n3 bgsp"></span><span>套票</span><span class="s bgsp"></span></a></li>
+    </ul>
+    <div class="form_block">
+      <form method="post" action="">
+        <dl>
+          <dd> <span class="dib">日期</span> 
+            <!--==时间范围start==-->
+            <div class="tool_date cf dib">
+              <div class="date"> <span class="date_title" id="date"></span> <a class="opt_sel" id="input_trigger" href="#"> <i class="i_orderd"></i> </a> </div>
+              <div id="datePicker"></div>
+            </div>
+            <!--==时间范围end==--> 
+          </dd>
+          <dd><span class="dib">区域</span>
+            <select class="dib">
+              <option>选择区域</option>
+              <option>澳门</option>
+            </select>
+          </dd>
+        </dl>
+        <a id="isf_bt" class="bgsp"></a>
+      </form>
+    </div>
+    <div class="list_block">
+      <div class="title">特色新品<span class="n">New</span></div>
+      <ul class="pro_com_list">
+        <li><a href="#">威尼斯人威丰味Cafe Deco</a><span class="f">起</span><span class="p">￥120</span></li>
+        <li><a href="#">威尼斯人威丰味Cafe Deco</a><span class="f">起</span><span class="p">￥120</span></li>
+        <li><a href="#">威尼斯人威丰味Cafe Deco</a><span class="f">起</span><span class="p">￥120</span></li>
+      </ul>
+      <div class="sr"><span class="icon bgsp dib"></span><span class="f dib">春夏全网至低价享受澳门特色推荐</span></div>
+    </div>
+  </div>
+</div>
+<!-- 首页搜索导航end --> 
+<!-- wrap -->
+<div class="wrap"> 
+  <!-- list -->
+  <ul class="index_list_a">
+    <li>
+      <div><img src="img/pro_eg1.jpg" /></div>
+      <div><span class="t">澳门喜來登酒店(Sheraton Macao Hotel)</span></div>
+      <div class="note_d"> <span class="pp">原价:</span> <span class="ppn">￥2000</span> <span class="npn">1899</span> <span class="np">￥</span> <span class="np">超值价:</span> </div>
+    </li>
+    <li>
+      <div><img src="img/pro_eg1.jpg" /></div>
+      <div><span class="t">澳门喜來登酒店(Sheraton Macao Hotel)</span></div>
+      <div class="note_d"> <span class="pp">原价:</span> <span class="ppn">￥2000</span> <span class="npn">1899</span> <span class="np">￥</span> <span class="np">超值价:</span> </div>
+    </li>
+    <li>
+      <div><img src="img/pro_eg1.jpg" /></div>
+      <div><span class="t">澳门喜來登酒店(Sheraton Macao Hotel)</span></div>
+      <div class="note_d"> <span class="pp">原价:</span> <span class="ppn">￥2000</span> <span class="npn">1899</span> <span class="np">￥</span> <span class="np">超值价:</span> </div>
+    </li>
+    <li>
+      <div><img src="img/pro_eg1.jpg" /></div>
+      <div><span class="t">澳门喜來登酒店(Sheraton Macao Hotel)</span></div>
+      <div class="note_d"> <span class="pp">原价:</span> <span class="ppn">￥2000</span> <span class="npn">1899</span> <span class="np">￥</span> <span class="np">超值价:</span> </div>
+    </li>
+  </ul>
+  <!-- list end --> 
+  <!-- 幻灯片与排行榜 -->
+  <div class="index_s_b">
+    <div class="big_img_block fl">
+      <ul>
+        <li><img src="img/slide_a.jpg" /></li>
+      </ul>
+    </div>
+    <div class="hot_list bg1 fr">
+      <div class="title"><span class="i"></span><span class="f">热卖排行榜</span></div>
+      <ul class="mhl">
+        <li>
+          <div class="fl">
+            <p><span class="p">￥220</span><span class="f">起</span></p>
+            <p>澳门观光塔自助餐</p>
+          </div>
+          <div class="fr"><img src="img/pro_eg1_a.jpg" /></div>
+        </li>
+        <li>
+          <div class="fl">
+            <p><span class="p">￥220</span><span class="f">起</span></p>
+            <p>澳门观光塔自助餐</p>
+          </div>
+          <div class="fr"><img src="img/pro_eg1_a.jpg" /></div>
+        </li>
+        <li>
+          <div class="fl">
+            <p><span class="p">￥220</span><span class="f">起</span></p>
+            <p>澳门观光塔自助餐</p>
+          </div>
+          <div class="fr"><img src="img/pro_eg1_a.jpg" /></div>
+        </li>
+        <li>
+          <div class="fl">
+            <p><span class="p">￥220</span><span class="f">起</span></p>
+            <p>澳门观光塔自助餐</p>
+          </div>
+          <div class="fr"><img src="img/pro_eg1_a.jpg" /></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 幻灯片与排行榜end --> 
+  
+   <!-- 酒店block -->
+  <div class="index_l_cd">
+    <div class="ihc_left fl">
+      <div class="il_title"> <span class="t t0 dib">酒店</span>
+        <ul class="nav dib">
+          <li><a class="current"><span class="f">澳门市区</span><span class="bgsp"></span></a></li>
+          <li><a><span class="f">氹仔区</span><span class="bgsp"></span></a></li>
+          <li><a><span class="f">路环区</span><span class="bgsp"></span></a></li>
+          <li><a><span class="f">路氹区</span><span class="bgsp"></span></a></li>
+        </ul>
+      </div>
+      
+      <div class="il_m_block">
+      <a class="img_adv dib fl"><img src="img/cover_img.jpg" /></a>
+      <ul class="pro_com_list dib fr">
+        <li><a href="#">澳门喜來登酒店(Sheraton Macao Hotel)</a><span class="f">起</span><span class="p">￥1863</span></li>
+        <li><a href="#">澳门喜來登酒店(Sheraton Macao Hotel)</a><span class="f">起</span><span class="p">￥1863</span></li>
+        <li><a href="#">澳门喜來登酒店(Sheraton Macao Hotel)</a><span class="f">起</span><span class="p">￥1863</span></li>
+        <li><a href="#">澳门喜來登酒店(Sheraton Macao Hotel)</a><span class="f">起</span><span class="p">￥1863</span></li>
+        <li><a href="#">澳门喜來登酒店(Sheraton Macao Hotel)</a><span class="f">起</span><span class="p">￥1863</span></li>
+        <li><a href="#">澳门喜來登酒店(Sheraton Macao Hotel)</a><span class="f">起</span><span class="p">￥1863</span></li>
+        <li><a href="#">澳门喜來登酒店(Sheraton Macao Hotel)</a><span class="f">起</span><span class="p">￥1863</span></li>
+        <li><a href="#">澳门喜來登酒店(Sheraton Macao Hotel)</a><span class="f">起</span><span class="p">￥1863</span></li>
+      </ul>
+      </div>
+      
+    </div>
+    
+    <div class="hot_list bg2 fr">
+      <div class="title "><span class="f">车船票</span></div>
+      <ul class="mhl l2">
+        <li>
+          <div class="fl">
+            <p><span class="g">香港<=>澳门</span><span class="p">￥220</span><span class="f">起</span></p>
+            <p><span class="g">香港<=>澳门</span><a class="bt">去看看</a></p>
+          </div>
+          <div class="fr"><img src="img/pro_eg1_a.jpg" /></div>
+        </li>
+        <li>
+          <div class="fl">
+            <p><span class="g">香港<=>澳门</span><span class="p">￥220</span><span class="f">起</span></p>
+            <p><span class="g">香港<=>澳门</span><a class="bt">去看看</a></p>
+          </div>
+          <div class="fr"><img src="img/pro_eg1_a.jpg" /></div>
+        </li>
+        <li>
+          <div class="fl">
+            <p><span class="g">香港<=>澳门</span><span class="p">￥220</span><span class="f">起</span></p>
+            <p><span class="g">香港<=>澳门</span><a class="bt">去看看</a></p>
+          </div>
+          <div class="fr"><img src="img/pro_eg1_a.jpg" /></div>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+  <!-- 酒店block end -->
+  
+  <div class="clear mt15"><a><img src="img/banner.jpg" /></a></div>
+  
+  <!-- 门票餐劵block -->
+  <div class="index_l_cd">
+  <!-- left -->
+    <div class="ihc_left fl">
+      <div class="il_title"> <span class="t t1 dib">门票餐劵</span>
+        <ul class="nav dib">
+          <li><a class="current"><span class="f">门票</span><span class="bgsp"></span></a></li>
+          <li><a><span class="f">自助餐</span><span class="bgsp"></span></a></li>
+          <li><a><span class="f">套票</span><span class="bgsp"></span></a></li>
+        </ul>
+      </div>
+      
+      <div class="il_m_block lt_b">
+      <ul class="pro_com_list dib">
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+      </ul>
+      <a class="dib lt_b_img"><img src="img/adv_eg_a.jpg" /></a>
+      <ul class="pro_com_list dib">
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+      </ul>
+      </div>
+      
+      
+      
+      <div class="il_title mt20"> <span class="t t1 dib">自由行套票</span>
+        <ul class="nav dib">
+          <li><a class="current"><span class="f">酒店套票</span><span class="bgsp"></span></a></li>
+          <li><a><span class="f">自助餐套票</span><span class="bgsp"></span></a></li>
+          <li><a><span class="f">游玩套票</span><span class="bgsp"></span></a></li>
+        </ul>
+      </div>
+      
+      <div class="il_m_block lt_b">
+      <ul class="pro_com_list dib">
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+      </ul>
+      <a class="dib lt_b_img"><img src="img/adv_eg_a.jpg" /></a>
+      <ul class="pro_com_list dib">
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+        <li><a href="#">澳门新濠天地水舞间-水上歌舞</a><span class="f">起</span><span class="p">￥863</span></li>
+      </ul>
+      </div>
+      
+    </div>
+    <!-- left end -->
+    <!-- right -->
+    <div class="ihc_right fr">
+    <a><img src="img/pro_eg1_b.jpg" /></a>
+    <a><img src="img/low_adv.jpg" /></a>
+    </div>
+    <!-- right end -->
+    
+  </div>
+  <!-- 门票餐劵block end --> 
+  
+</div>
+<!-- wrap end --> 
+
+<!-- foot -->
+<!-- foot end -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        //应用的初始化参数
+        var initParams = {"start_date":"2014-03-05","end_date":"2014-03-15"};
+        var dateObj = {
+            inputId:'date',
+            startDate: initParams.start_date || '',
+            endDate: initParams.end_date || ''
+        };
+        createDateRange(dateObj);
+    });
+</script>
 </body>
 </html>
