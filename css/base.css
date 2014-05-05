@@ -159,4 +159,8 @@ body{font-family:"Microsoft YaHei","simsun";}
 .common_foot .help_list dl.il{ margin-left:10px;}
 .common_foot .help_list dl.il dt{font-size:#666; font-size:13px;}
 .common_foot .help_list dl.il dd{font-size:20px; color:#fe8107;}
+.common_foot .ab_foot{ overflow:hidden;background:#f0f0f0;}
+.common_foot .aft{width:980px; margin:0 auto; padding:10px 0; border-top:1px dotted #b4b4b4; border-bottom:1px dotted #b4b4b4; overflow:hidden;}
+.common_foot .aft ul li{font-size:14px; font-weight:bold; color:#666;}
+.aft_note
 /*foot end*/
