@@ -146,3 +146,17 @@ body{font-family:"Microsoft YaHei","simsun";}
 .index_l_cd .ihc_right a{ display:block; margin-bottom:40px;}
 .index_l_cd .ihc_right a img{ width:250px;}
 /*index end*/
+
+/*foot*/
+.common_foot{overflow:hidden; margin-top:15px; background:url(../img/foot_bg.jpg) repeat-x; padding-top:25px;}
+.common_foot .help_list{width:980px; margin:0 auto; overflow:hidden;}
+.common_foot .help_list dl{ display:inline-block; *display:inline; *zoom:1; vertical-align:top; overflow:hidden;}
+.common_foot .help_list dl dt{line-height:30px;}
+.common_foot .help_list dl dd{ line-height:25px;}
+.common_foot .help_list dl.hl{width:160px;}
+.common_foot .help_list dl.hl dt{font-size:14px; font-weight:bold;}
+.common_foot .help_list dl.hl dd a{font-size:13px; color:#666; margin-right:15px;}
+.common_foot .help_list dl.il{ margin-left:10px;}
+.common_foot .help_list dl.il dt{font-size:#666; font-size:13px;}
+.common_foot .help_list dl.il dd{font-size:20px; color:#fe8107;}
+/*foot end*/
