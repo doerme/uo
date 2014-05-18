@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>游澳-频道页</title>
+<meta name="keywords" content="游澳">
+<meta name="description" content="游澳">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/dateRange.css" charset="utf-8">
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/dateRange.js"></script>
+</head>
+
+<body>
+<!-- 通用头部 -->
+<div class="common_head_wrap">
+  <div class="common_head">
+    <div class="ch_logo dib fl"> <img src="img/web_logo.jpg" /> </div>
+    <div class="ch_ctrl dib fr">
+      <div class="chc_top fr">
+        <ul>
+          <li><a href="javascript:;">切換為中文(繁體)</a></li>
+          <li><a href="javascript:;">登录</a>|<a href="javascript:;">注册</a></li>
+          <li><a href="javascript:;">我的订单</a></li>
+          <li><img src="img/weixin_jia.jpg" /></li>
+          <li>
+            <dl>
+              <dt>服务热线：09:00-21:00</dt>
+              <dd>020-88888888</dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+      <div class="chc_bottom fl">
+        <ul>
+          <li class="current"><a>首页</a></li>
+          <li>|</li>
+          <li><a>澳门自由行</a></li>
+          <li>|</li>
+          <li><a>香港自由行</a></li>
+          <li>|</li>
+          <li><a>出境旅游</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 通用头部end --> 
+<!-- 通用面包屑 -->
+<div class="bread_crumbs"> <a class="dib a" href="/">首页</a><span class="dib">></span><a class="dib e">酒店</a> </div>
+<!-- 通用面包屑end -->
+<div class="search_block">
+  <div class="sb_left fl">
+    <div class="sb_line dib"> <span class="st">地区分类</span>
+      <div class="select_block dib"><span class="select_val">选择地区</span><a class="opt_sel" id="input_trigger" > <i class="i_orderd"></i> </a>
+        <ul class="select_list">
+          <li><a>澳门市区</a></li>
+          <li><a>氹仔區</a></li>
+          <li><a>路氹區</a></li>
+          <li><a>路環區</a></li>
+        </ul>
+      </div>
+      <!-- /select -->
+      <div class="select_block dib"><span class="select_val">选择地区</span><a class="opt_sel" id="input_trigger" > <i class="i_orderd"></i> </a>
+        <ul class="select_list">
+          <li><a>澳门市区</a></li>
+          <li><a>氹仔區</a></li>
+          <li><a>路氹區</a></li>
+          <li><a>路環區</a></li>
+        </ul>
+      </div>
+      <!-- /select -->
+      <div class="input_block dib"> <span class="input_frm">
+        <input class="hotel_name" type="text" value="" name="" placeholder="酒店名称" />
+        </span> </div>
+      <!-- /select --> 
+    </div>
+    <!-- /sb_line -->
+    <div class="sb_line"> <span class="st">选择日期</span> 
+      <!--==时间范围start==-->
+      <div class="tool_date cf dib">
+        <div class="date"> <span class="date_title" id="date"></span> <a class="opt_sel" id="input_trigger" href="#"> <i class="i_orderd"></i> </a> </div>
+        <div id="datePicker"></div>
+      </div>
+      <!--==时间范围end==--> 
+    </div>
+    <!-- /sb_line --> 
+  </div>
+  <div class="sb_right fr"> <a id="csf_bt" class="bgsp"></a> </div>
+</div>
+<!-- /search_block --> 
+<!-- 特惠推荐 -->
+<div class="rcm_block">
+  <div class="rcm_block_title">特惠推荐</div>
+  <ul class="rcm_list">
+    <li> <a href="#"><img src="img/rcm_eg.jpg" /></a> <span class="title">澳门喜来登酒店</span>
+      <div class="ctr_box"> <span class="m dib">最低价</span><span class="p dib">￥1860</span> <a class="o dib" href="#">就定这个</a> <span class="c bgsp dib"></span> </div>
+    </li>
+    <li> <a href="#"><img src="img/rcm_eg.jpg" /></a> <span class="title">澳门喜来登酒店</span>
+      <div class="ctr_box"> <span class="m dib">最低价</span><span class="p dib">￥1860</span> <a class="o dib" href="#">就定这个</a> <span class="c bgsp dib"></span> </div>
+    </li>
+    <li> <a href="#"><img src="img/rcm_eg.jpg" /></a> <span class="title">澳门喜来登酒店</span>
+      <div class="ctr_box"> <span class="m dib">最低价</span><span class="p dib">￥1860</span> <a class="o dib" href="#">就定这个</a> <span class="c bgsp dib"></span> </div>
+    </li>
+    <li> <a href="#"><img src="img/rcm_eg.jpg" /></a> <span class="title">澳门喜来登酒店</span>
+      <div class="ctr_box"> <span class="m dib">最低价</span><span class="p dib">￥1860</span> <a class="o dib" href="#">就定这个</a> <span class="c bgsp dib"></span> </div>
+    </li>
+  </ul>
+</div>
+<!-- /特惠推荐end --> 
+<!-- 超值酒店 -->
+<div class="main_list">
+  <div class="ml_top"> <span class="t fl dib">超值酒店</span>
+    <div class="nav fr dib"> <a href="#" class="current">热门</a> <a href="#">澳门市区</a> <a href="#">氹仔区</a> <a href="#">路氹区</a> <a href="#">路环区</a> </div>
+  </div>
+  <div class="ml_main">
+   <div class="ml_line">
+   <div class="ml_line_title">直销酒店推荐</div>
+   <ul class="mlt_list fl">
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   </ul>
+   <ul class="mlt_list fr">
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   </ul>
+   </div>
+   <!-- /line -->
+   <div class="ml_line">
+   <div class="ml_line_title">经济型酒店推荐</div>
+   <ul class="mlt_list fl">
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   </ul>
+   <ul class="mlt_list fr">
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   </ul>
+   </div>
+   <!-- /line -->
+   <div class="ml_line">
+   <div class="ml_line_title">最低价酒店</div>
+   <ul class="mlt_list fl">
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   </ul>
+   <ul class="mlt_list fr">
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   </ul>
+   </div>
+   <!-- /line -->
+   <div class="ml_line">
+   <div class="ml_line_title">直销酒店推荐</div>
+   <ul class="mlt_list fl">
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   </ul>
+   <ul class="mlt_list fr">
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   <li><span class="p">￥795</span><a href="#" target="_blank" class="t">澳门濠璟酒店(Riviera Hotel M...</a><span class="l">位于：</span><a href="#" target="_blank" class="c">澳门半岛</a></li>
+   </ul>
+   </div>
+   <!-- /line -->
+  </div>
+</div>
+<!-- /超值酒店 --> 
+
+<!-- foot -->
+<div class="common_foot">
+ <div class="help_list">
+ <dl class="hl">
+ <dt>澳门自由行</dt>
+ <dd><a href="#" target="_blank">澳门套牌</a><a href="#" target="_blank">澳门套牌</a></dd>
+ <dd><a href="#" target="_blank">澳门套牌</a><a href="#" target="_blank">澳门套牌</a></dd>
+ <dd><a href="#" target="_blank">澳门套牌</a><a href="#" target="_blank">澳门套牌</a></dd>
+ </dl>
+ <dl class="hl">
+ <dt>澳门自由行</dt>
+ <dd><a href="#" target="_blank">澳门套牌</a><a href="#" target="_blank">澳门套牌</a></dd>
+ <dd><a href="#" target="_blank">澳门套牌</a><a href="#" target="_blank">澳门套牌</a></dd>
+ <dd><a href="#" target="_blank">澳门套牌</a><a href="#" target="_blank">澳门套牌</a></dd>
+ </dl>
+ <dl class="hl">
+ <dt>澳门自由行</dt>
+ <dd><a href="#" target="_blank">澳门套牌</a><a href="#" target="_blank">澳门套牌</a></dd>
+ <dd><a href="#" target="_blank">澳门套牌</a><a href="#" target="_blank">澳门套牌</a></dd>
+ <dd><a href="#" target="_blank">澳门套牌</a><a href="#" target="_blank">澳门套牌</a></dd>
+ </dl>
+ <dl class="il">
+ <dt>购买流程：</dt>
+ <dd><img src="img/foot-bg.jpg" /></dd>
+ </dl>
+ <dl class="il">
+ <dt>服务热线：</dt>
+ <dd>020-88888888</dd>
+ <dd>09:00-21:00</dd>
+ </dl>
+</div>
+
+<div class="ab_foot">
+ <div class="aft">
+ <img class="aft_img dib fl" src="img/foot-bg2.jpg" />
+ <ul class="aft_note dib fr"><li>预订酒店</li><li>享受便捷服务</li><li>让你获得更多特价酒店</li><li>到店无房 全责赔付</li><li>订房更加可靠更保障</li></ul>
+ </div>
+ <div class="afb">
+ <ul class="under_line">
+ <li><a href="#" target="_blank">公司简介</a></li><li>|</li>
+ <li><a href="#" target="_blank">联系我们</a></li><li>|</li>
+ <li><a href="#" target="_blank">网站地图</a></li><li>|</li>
+ <li><a href="#" target="_blank">服务说明</a></li><li>|</li>
+ <li><a href="#" target="_blank">友情连接</a></li>
+ </ul>
+ <p>版權所有 © 2014 游澳假期旅行社有限公司. Powered by Zen Cart</p>
+ </div>
+
+</div>
+ 
+ 
+ 
+</div>
+<!-- foot end -->
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        //应用的初始化参数
+        var initParams = {"start_date":"2014-03-05","end_date":"2014-03-15"};
+        var dateObj = {
+            inputId:'date',
+            startDate: initParams.start_date || '',
+            endDate: initParams.end_date || ''
+        };
+        createDateRange(dateObj);
+		
+	$(".select_block > .select_val,.select_block>.opt_sel").bind("click",function(){
+		$(this).nextAll(".select_list").show();
+		
+		});
+	$(".select_list >li> a").click(function(){
+		var tp=$(this).parent("li").parent(".select_list");
+		tp.hide();
+		tp.prevAll(".select_val").html($(this).html());
+		});
+    });
+</script>
+</body>
+</html>
