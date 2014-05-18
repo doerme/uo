@@ -50,9 +50,10 @@
 <!-- 首页搜索导航 -->
 <div class="index_search">
   <div class="is_main">
-    <div class="is_bg"> 
+    <div class="is_bg dib-wrap"> 
       <!-- 背景 两个标签之间不允许回车换行 -->
-      <div class="bg_left dib"></div><div class="bg_right dib"></div>
+      <div class="bg_left dib"></div>
+      <div class="bg_right dib"></div>
       <!-- 背景 end --> 
     </div>
     <ul class="ism_nav">
@@ -66,16 +67,20 @@
           <dd> <span class="dib">日期</span> 
             <!--==时间范围start==-->
             <div class="tool_date cf dib">
-              <div class="date"> <span class="date_title" id="date"></span> <a class="opt_sel" id="input_trigger" href="#"> <i class="i_orderd"></i> </a> </div>
+              <div class="date"> <span class="date_title" id="date"></span> <a class="opt_sel" id="input_trigger" > <i class="i_orderd"></i> </a> </div>
               <div id="datePicker"></div>
             </div>
             <!--==时间范围end==--> 
           </dd>
-          <dd><span class="dib">区域</span>
-            <select class="dib">
-              <option>选择区域</option>
-              <option>澳门</option>
-            </select>
+          <dd>
+          <span class="dib">区域</span> 
+          <div class="select_block dib"><span class="select_val">澳门区域</span><a class="opt_sel" id="input_trigger" > <i class="i_orderd"></i> </a>
+          <ul class="select_list">
+          <li><a>澳门市区</a></li>
+          <li><a>氹仔區</a></li>
+          <li><a>路氹區</a></li>
+          <li><a>路環區</a></li></ul>
+          </div>
           </dd>
         </dl>
         <a id="isf_bt" class="bgsp"></a>
@@ -363,6 +368,16 @@
             endDate: initParams.end_date || ''
         };
         createDateRange(dateObj);
+		
+	$(".select_block > .select_val,.select_block>.opt_sel").bind("click",function(){
+		$(this).nextAll(".select_list").show();
+		
+		});
+	$(".select_list >li> a").click(function(){
+		var tp=$(this).parent("li").parent(".select_list");
+		tp.hide();
+		tp.prevAll(".select_val").html($(this).html());
+		});
     });
 </script>
 </body>
